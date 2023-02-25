@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+body {
+  background-color: black;
+  color: antiquewhite;
+  font-family: "Rubik", sans-serif;
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  gap: 20px;
+  grid-auto-rows: minmax(100px, auto);
+  align-items: center;
+  justify-items: center;
+  margin: 24px;
+}
+
+.report {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  border-radius: 18px;
+  background-color: hsl(226deg, 43%, 10%);
+}
+.report .report-header {
+  display: flex;
+  border-radius: 18px;
+  background-color: hsl(246deg, 80%, 60%);
+  padding: 30px 45px;
+  align-items: center;
+  justify-content: space-around;
+}
+.report .report-header img {
+  width: 95px;
+  height: 95px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.report .report-header .report-header-headings {
+  display: flex;
+  flex-direction: column;
+}
+.report .report-header .report-header-headings h1 {
+  font-size: large;
+  font-weight: 400;
+}
+.report .report-header .report-header-headings h3 {
+  font-size: small;
+  font-weight: 300;
+}
+.report ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.report ul li {
+  float: left;
+}
+.report ul li .active {
+  color: hsl(236deg, 100%, 87%);
+}
+.report ul li a {
+  display: block;
+  color: hsl(235deg, 45%, 61%);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.report ul li a:hover {
+  color: hsl(236deg, 100%, 87%);
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 375px;
+  border-radius: 18px;
+}
+.card .card-img {
+  display: flex;
+  margin-right: 18px;
+  height: 35px;
+}
+.card .card-img img {
+  -o-object-fit: none;
+     object-fit: none;
+}
+.card .card-body {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(226deg, 43%, 10%);
+  width: 100%;
+  border-radius: 18px;
+}
+.card .card-body .card-body-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px 0 24px;
+  font-size: large;
+  font-weight: 500;
+}
+.card .card-body .card-body-hours {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px 16px 24px;
+}
+.card .card-body .card-body-hours .card-body-hours-current ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.card .card-body .card-body-hours .card-body-hours-current ul li {
+  display: none;
+  font-size: xx-large;
+  font-weight: 300;
+}
+.card .card-body .card-body-hours .card-body-hours-current ul li.active {
+  display: block;
+}
+.card .card-body .card-body-hours .card-body-hours-previous ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.card .card-body .card-body-hours .card-body-hours-previous ul li {
+  display: none;
+}
+.card .card-body .card-body-hours .card-body-hours-previous ul li.active {
+  display: block;
+  color: hsl(235deg, 45%, 61%);
+}
+.card .card-body:hover {
+  background-color: hsl(235deg, 46%, 20%);
+  cursor: pointer;
+}
+
+.work {
+  background-color: hsl(15deg, 100%, 70%);
+}
+
+.play {
+  background-color: hsl(195deg, 74%, 62%);
+}
+
+.study {
+  background-color: hsl(348deg, 100%, 68%);
+}
+
+.exercise {
+  background-color: hsl(145deg, 58%, 55%);
+}
+
+.social {
+  background-color: hsl(264deg, 64%, 52%);
+}
+
+.self-care {
+  background-color: hsl(43deg, 84%, 65%);
+}
+
+@media (min-width: 1440px) {
+  body {
+    height: 100vh;
+  }
+  body .grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  body .report {
+    grid-area: 1/1/3/2;
+    width: 200px;
+  }
+  body .report .report-header, body .report ul {
+    flex-direction: column;
+    padding-left: 24px;
+    align-items: flex-start;
+  }
+  body .work {
+    grid-area: 1/2/2/3;
+  }
+  body .play {
+    grid-area: 1/3/2/4;
+  }
+  body .study {
+    grid-area: 1/4/2/5;
+  }
+  body .exercise {
+    grid-area: 2/2/3/3;
+  }
+  body .social {
+    grid-area: 2/3/3/4;
+  }
+  body .self-care {
+    grid-area: 2/4/3/5;
+  }
+  body .card {
+    width: 200px;
+  }
+  body .card .card-body .card-body-hours {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}/*# sourceMappingURL=style.css.map */

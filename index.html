@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+</head>
+<body>
+
+  <div class="grid">
+
+      <div class="report">
+        <div class="report-header">
+          <img src="./images/image-jeremy.png" alt="">
+          <div class="report-header-headings">
+            <h3>Report for</h3>
+            <h1>Jeremy Robson</h1>
+          </div>
+        </div>
+        
+        <ul id="selections">
+          <li><a class="selection daily" onclick="selection('daily')">Daily</a></li>
+          <li><a class="selection weekly active" onclick="selection('weekly')">Weekly</a></li>
+          <li><a class="selection monthly" onclick="selection('monthly')">Monthly</a></li>
+        </ul>
+
+      </div>
+
+    <div class="card work">
+      <div class="card-img">
+        <img src="./images/icon-work.svg" alt="briefcase">
+      </div>
+      <div class="card-body">
+        <div class="card-body-header">
+          <p>Work</p>
+          <img src="./images/icon-ellipsis.svg" alt="">
+        </div>
+        <div class="card-body-hours">
+          <div class="card-body-hours-current">
+            <ul>
+              <li class="selection daily">5hrs <!-- daily --></li>
+              <li class="selection weekly active">32hrs <!-- weekly --></li>
+              <li class="selection monthly">103hrs <!-- monthly --></li>
+            </ul>          
+          </div>
+          <div class="card-body-hours-previous">
+            <ul>
+              <li class="selection daily">Yesterday - 7hrs <!-- daily --></li>
+              <li class="selection weekly active">Last Week - 36hrs <!-- weekly --></li>
+              <li class="selection monthly">Last Month - 128hrs <!-- monthly --></li>
+            </ul>
+          </div>        
+        </div>
+      </div>
+    </div>
+
+    <div class="card play">
+      <div class="card-img">
+        <img src="./images/icon-play.svg" alt="controller">
+      </div>
+      <div class="card-body">
+        <div class="card-body-header">
+          <p>Play</p>
+          <img src="./images/icon-ellipsis.svg" alt="">
+        </div>
+        <div class="card-body-hours">
+          <div class="card-body-hours-current">
+            <ul>
+              <li class="selection daily">1hr <!-- daily --></li>
+              <li class="selection weekly active">10hrs <!-- weekly --></li>
+              <li class="selection monthly">23hrs <!-- monthly --></li>
+            </ul>          
+          </div>
+          <div class="card-body-hours-previous">
+            <ul>
+              <li class="selection daily">Yesterday - 2hrs <!-- daily --></li>
+              <li class="selection weekly active">Last Week - 8hrs <!-- weekly --></li>
+              <li class="selection monthly">Last Month - 29hrs <!-- monthly --></li>
+            </ul>
+          </div>        
+        </div>
+      </div>
+    </div>
+
+    <div class="card study">
+      <div class="card-img">
+        <img src="./images/icon-study.svg" alt="book">
+      </div>
+      <div class="card-body">
+        <div class="card-body-header">
+          <p>Study</p>
+          <img src="./images/icon-ellipsis.svg" alt="">
+        </div>
+        <div class="card-body-hours">
+          <div class="card-body-hours-current">
+            <ul>
+              <li class="selection daily">0hrs <!-- daily --></li>
+              <li class="selection weekly active">4hrs <!-- weekly --></li>
+              <li class="selection monthly">13hrs <!-- monthly --></li>
+            </ul>          
+          </div>
+          <div class="card-body-hours-previous">
+            <ul>
+              <li class="selection daily">Yesterday - 1hr <!-- daily --></li>
+              <li class="selection weekly active">Last Week - 7hrs <!-- weekly --></li>
+              <li class="selection monthly">Last Month - 19hrs <!-- monthly --></li>
+            </ul>
+          </div>        
+        </div>
+      </div>
+    </div>
+
+    <div class="card exercise">
+      <div class="card-img">
+        <img src="./images/icon-exercise.svg" alt="sportsman">
+      </div>
+      <div class="card-body">
+        <div class="card-body-header">
+          <p>Exercise</p>
+          <img src="./images/icon-ellipsis.svg" alt="">
+        </div>
+        <div class="card-body-hours">
+          <div class="card-body-hours-current">
+            <ul>
+              <li class="selection daily">1hr <!-- daily --></li>
+              <li class="selection weekly active">4hrs <!-- weekly --></li>
+              <li class="selection monthly">11hrs <!-- monthly --></li>
+            </ul>          
+          </div>
+          <div class="card-body-hours-previous">
+            <ul>
+              <li class="selection daily">Yesterday - 1hr <!-- daily --></li>
+              <li class="selection weekly active">Last Week - 5hrs <!-- weekly --></li>
+              <li class="selection monthly">Last Month - 18hrs <!-- monthly --></li>
+            </ul>
+          </div>        
+        </div>
+      </div>
+    </div>
+
+    <div class="card social">
+      <div class="card-img">
+        <img src="./images/icon-social.svg" alt="dialog baloon">
+      </div>
+      <div class="card-body">
+        <div class="card-body-header">
+          <p>Social</p>
+          <img src="./images/icon-ellipsis.svg" alt="">
+        </div>
+        <div class="card-body-hours">
+          <div class="card-body-hours-current">
+            <ul>
+              <li class="selection daily">1hr <!-- daily --></li>
+              <li class="selection weekly active">5hrs <!-- weekly --></li>
+              <li class="selection monthly">21hrs <!-- monthly --></li>
+            </ul>          
+          </div>
+          <div class="card-body-hours-previous">
+            <ul>
+              <li class="selection daily">Yesterday - 3hrs <!-- daily --></li>
+              <li class="selection weekly active">Last Week - 10hrs <!-- weekly --></li>
+              <li class="selection monthly">Last Month - 23hrs <!-- monthly --></li>
+            </ul>
+          </div>        
+        </div>
+      </div>
+    </div>
+
+    <div class="card self-care">
+      <div class="card-img">
+        <img src="./images/icon-self-care.svg" alt="heart with plus">
+      </div>
+      <div class="card-body">
+        <div class="card-body-header">
+          <p>Self-care</p>
+          <img src="./images/icon-ellipsis.svg" alt="">
+        </div>
+        <div class="card-body-hours">
+          <div class="card-body-hours-current">
+            <ul>
+              <li class="selection daily">0hrs <!-- daily --></li>
+              <li class="selection weekly active">2hrs <!-- weekly --></li>
+              <li class="selection monthly">7hrs <!-- monthly --></li>
+            </ul>          
+          </div>
+          <div class="card-body-hours-previous">
+            <ul>
+              <li class="selection daily">Yesterday - 1hr <!-- daily --></li>
+              <li class="selection weekly active">Last Week - 2hrs <!-- weekly --></li>
+              <li class="selection monthly">Last Month - 11hrs <!-- monthly --></li>
+            </ul>
+          </div>        
+        </div>
+      </div>
+    </div>
+
+   
+  </div>
+  
+</body>
+</html>
+
