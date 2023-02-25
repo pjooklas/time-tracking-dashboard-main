@@ -28,12 +28,12 @@ Users should be able to:
 
 ### Screenshot
 
-[x](./images/screenshot.jpg)
+![](./images/screenshot.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/pjooklas/time-tracking-dashboard-main)
-- Live Site URL: [Add live site URL here](https://pjooklas.github.io/time-tracking-dashboard-main/)
+- Solution URL: (https://github.com/pjooklas/time-tracking-dashboard-main)
+- Live Site URL: (https://pjooklas.github.io/time-tracking-dashboard-main/)
 
 ## My process
 
